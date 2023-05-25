@@ -1,130 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/utils.css">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="/css/style.css">
+    <link rel="stylesheet"
+    href="/css/utils.css">
+    <script src="/js/dropdown.js"></script>
     <title>NewKart</title>
 </head>
+
 <body>
     <header class="flex-align-center">
 
-            <div >
-                <a href="home.html"><img class="logo" src="/img/logo.png" alt=""></a>
+        <div>
+            <a href="home.html"><img class="logo"
+                    src="/img/logo.png"
+                    alt=""></a>
+        </div>
+        <nav>
+            <div class="flex-all-center dropdown">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a onclick="myFunction()"
+                            class="dropbtn">Products</a>
+                        <div id="myDropdown"
+                            class="dropdown-content">
+                            <a href="/MensApparel/mensApparel.html">Men's Apparel</a>
+                            <a href="/WomensApparel/womensApparel.html">Women's Apparel</a>
+                            <a href="/Footwear/footwear.html">Footwear</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <nav>
-                <div class="flex-all-center">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="flex-all-center">
-                <input class="search" type="text" placeholder="  Search..." name="search" id="search">
-                <a href="/wishlist.html"><img class="wishlist" src="/img/wishlist.png" alt=""></a>
-                <a href="/cart.html"><img class="cart" src="/img/cart.png" alt=""></a>
-            </div>
-            <!-- <div>
+        </nav>
+        <div class="flex-all-center">
+            <input class="search"
+                type="text"
+                placeholder="  Search..."
+                name="search"
+                id="search">
+            <a href="/wishlist.html"><img class="wishlist"
+                    src="/img/wishlist.png"
+                    alt=""></a>
+            <a href="/cart.html"><img class="cart"
+                    src="/img/cart.png"
+                    alt=""></a>
+        </div>
+        <!-- <div>
             </div> -->
     </header>
     <main>
         <div class="padding-top container">
             <div class="slider">
-                <img src="https://source.unsplash.com/1600x200/?shopping,ecommerce" alt="" srcset="" width="150%">
+                <img src="https://source.unsplash.com/1600x200/?shopping,ecommerce"
+                    alt=""
+                    srcset=""
+                    width="150%">
             </div>
-            <div class="card" ><a href="/MensApparel/mensApparel.html">
-                <h2 class="card-title">Men's Apparel</h2></a>
+            <div class="card"><a href="/MensApparel/mensApparel.html">
+                    <h2 class="card-title">Men's Apparel</h2>
+                </a>
                 <div class="card-items">
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?mens-fashion,shirts" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?mens-fashion,shirts"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Men's Shirts <br> Upto 60% off <br> Shop Now</p>
+                        <p>Men's Shirts <br> Upto 60% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?mens-fashion,pants" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?mens-fashion,pants"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Men's Pants <br> Min 20% off <br> Shop Now</p>
+                        <p>Men's Pants <br> Min 20% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?man-in-suit" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?man-in-suit"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Men's Suits <br> From 1500 <br> Shop Now</p>
+                        <p>Men's Suits <br> From 1500 <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?men-tshirt" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?men-tshirt"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Men's Tshirt <br> Upto 40% off <br> Shop Now</p>
+                        <p>Men's Tshirt <br> Upto 40% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?mens-watch" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?mens-watch"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Men's watch <br>  min 30% off <br> Shop Now</p>
+                        <p>Men's watch <br> min 30% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
                 </div>
             </div>
             <div class="card"><a href="/WomensApparel/womensApparel.html">
-                <h2 class="card-title">Women's Apparel</h2></a>
+                    <h2 class="card-title">Women's Apparel</h2>
+                </a>
                 <div class="card-items">
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?women-fashion" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?women-fashion"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Hot Picks <br> Upto 20% off <br> Shop Now</p>
+                        <p>Hot Picks <br> Upto 20% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?women-top" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?women-top"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Tops <br> Upto 50% off <br> Shop Now</p>
+                        <p>Tops <br> Upto 50% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?kurtis" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?kurtis"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Kurtis <br> From 2500 <br> Shop Now</p>
+                        <p>Kurtis <br> From 2500 <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?ethnic-wear" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?ethnic-wear"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Ethnic wear <br> Upto 35% off <br> Shop Now</p>
+                        <p>Ethnic wear <br> Upto 35% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
                 </div>
             </div>
             <div class="card"><a href="/Footwear/footwear.html">
-                <h2 class="card-title">Footwear</h2></a>
+                    <h2 class="card-title">Footwear</h2>
+                </a>
                 <div class="card-items">
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?shoes" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?shoes"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Shoes <br> Bestsellers <br> Shop Now</p>
+                        <p>Shoes <br> Bestsellers <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?sport-shoes" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?sport-shoes"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Sport Shoes <br> Upto 40% off <br> Shop Now</p>
+                        <p>Sport Shoes <br> Upto 40% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?formal shoes" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?formal shoes"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Formal Shoes <br> Min 10% off <br> Shop Now</p>
+                        <p>Formal Shoes <br> Min 10% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
-                    <div class="lines" >
-                        <img class="card-img" src="https://source.unsplash.com/160x160/?women-footwear" alt="">
+                    <div class="lines">
+                        <img class="card-img"
+                            src="https://source.unsplash.com/160x160/?women-footwear"
+                            alt="">
                         <!-- <div class="lines"> -->
-                            <p>Women's footwear <br> Upto 30% off <br> Shop Now</p>
+                        <p>Women's footwear <br> Upto 30% off <br> Shop Now</p>
                         <!-- </div> -->
                     </div>
                 </div>
@@ -132,8 +190,16 @@
         </div>
     </main>
     <footer class="flex-all-center direction">
-        <p >Copyright &copy; 2023 </p>
-        <p class="flex-align-center">Project by Sagar Srivastava <a href="http://www.linkedin.com/in/sagar-srivastava-493317228" target="_blank"><img class="img-link" src="/img/linkedin.png" alt=""></a><a href="https://github.com/B1TSagar" target="_blank"><img class="img-link" src="/img/github.png" alt=""></a></p>
+        <p>Copyright &copy; 2023 </p>
+        <p class="flex-align-center">Project by Sagar Srivastava <a
+                href="http://www.linkedin.com/in/sagar-srivastava-493317228"
+                target="_blank"><img class="img-link"
+                    src="/img/linkedin.png"
+                    alt=""></a><a href="https://github.com/B1TSagar"
+                target="_blank"><img class="img-link"
+                    src="/img/github.png"
+                    alt=""></a></p>
     </footer>
 </body>
+
 </html>
